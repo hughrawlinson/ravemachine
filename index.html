@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rave on, Firefox OS!</title>
+</head>
+<body id='b'>
+	<script type="text/javascript">
+		var cat = document.getElementById('b');
+		var colors = ['#FFFFFF','#000000','#FF0000','#000000','#00FF00','#000000','#0000FF','#000000'];
+		var counter = 0;
+		var a = 0;
+		var ms = 50;
+
+		function raveTick(){
+			cat.style.background = colors[counter];
+			counter = counter + 1;
+			if(counter == colors.length){
+				counter = 0;
+			}
+			a = 1 - a;
+			if(a==0){
+				navigator.vibrate([ms]);
+			}
+		}
+		setInterval(raveTick,ms);
+	</script>
+</body>
+</html>

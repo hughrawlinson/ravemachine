@@ -1,0 +1,19 @@
+{
+    "version": "1",
+    "name": "Firefox OS Rave Machine",
+    "launch_path": "http://codeoclock.dev/ravemachine/index.html",
+    "description": "An app to make your phone go nuts",
+    "icons": {
+        "16": "http://codeoclock.dev/ravemachine/logo16.png",
+        "32": "http://codeoclock.dev/ravemachine/logo32.png",
+        "48": "http://codeoclock.dev/ravemachine/logo48.png",
+        "64": "http://codeoclock.dev/ravemachine/logo64.png",
+        "128": "http://codeoclock.dev/ravemachine/logo128.png"
+    },
+    "developer": {
+        "name": "Hugh Rawlinson",
+        "url": "http://hughrawlinson.me"
+    },
+    "installs_allowed_from": ["*"],
+    "default_locale": "en"
+}
